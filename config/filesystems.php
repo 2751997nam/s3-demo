@@ -57,13 +57,13 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => env('AWS_ACCESS_KEY_ID'),
-            'secret' => env('AWS_SECRET_ACCESS_KEY'),
-            'region' => env('AWS_DEFAULT_REGION'),
-            'bucket' => env('AWS_BUCKET'),
+            'key' => env('AWS_ACCESS_KEY_ID', 'AKIAX7T32QDQ3OFMPL7W'),
+            'secret' => env('AWS_SECRET_ACCESS_KEY', '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'),
+            'region' => env('AWS_DEFAULT_REGION', 'ap-southeast-1'),
+            'bucket' => env('AWS_BUCKET', 'worldforfun-2751997'),
             'url' => env('AWS_URL'),
         ],
 
     ],
-
+    'cloudfront_domain' => 'https://d3egwgbuuuaqvf.cloudfront.net',
 ];
